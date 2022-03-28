@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import TailContainer from './components/layouts/TailContainer.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.component('tail-container', TailContainer)
+app.mount('#app')
